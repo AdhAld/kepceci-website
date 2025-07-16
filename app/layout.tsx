@@ -11,8 +11,20 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Kepçeci İş Makinaları - Doğu Anadolu Caterpillar Servisi",
   description:
-    "30+ yıllık deneyimimizle Doğu Anadolu Bölgesinin tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
+    "30+ yıllık deneyimimizle Doğu Anadolu Bölgesinin yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
     generator: 'Hüseyin Kocatürk , Abdullah Aldemir',
+icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+    shortcut: "/logo.png",
+  },
+  openGraph: {
+    title: "Kepçeci İş Makinaları - Doğu Anadolu Caterpillar Servisi",
+    description:"30+ yıllık deneyimimizle Doğu Anadolu Bölgesinin yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
+    url: "https://kepceciismakinalari.com",
+    siteName: "Kepçeci İş Makinaları",
+    locale: "tr_TR",
+    type: "website",}
 }
 
 export default function RootLayout({
