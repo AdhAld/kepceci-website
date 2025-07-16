@@ -150,7 +150,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Kepçeci İş Makinaları Hakkında</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                30 yılı aşkın deneyimimizle Doğu Anadolu Bölgesi'nin tek yetkili Borusan Caterpillar servisi olarak
+                35 yılı aşkın deneyimimizle Doğu Anadolu Bölgesi'nin tek yetkili Borusan Caterpillar servisi olarak
                 (Yetkili servis listesini aşşağıdaki bağlantıdan kontrol edebilirsiniz) hizmet veriyoruz. Güvenilir,
                 kaliteli ve profesyonel hizmet anlayışımızla sektörde lider konumdayız.
               </p>
