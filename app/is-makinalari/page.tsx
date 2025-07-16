@@ -61,13 +61,21 @@ export default function IsMakinalariPage() {
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-4">
             <Badge className="mb-4 bg-[#fcb912] text-black">Caterpillar Yetkili Bayii</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">İş Makinaları</h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Caterpillar'ın güvenilir ve dayanıklı iş makinaları ile projelerinizi başarıyla tamamlayın. Alım, satım ve
               kiralama seçenekleri mevcuttur.
             </p>
+            <Image
+              src="/cat.png"
+              alt="cat"
+              width={300}
+              height={300}
+              className="mt-2 w-24 h-24 border-b-2 border-b-black/50 flex justify-center mx-auto"
+              objectFit="contain"
+            />  
           </div>
 
           {/* Equipment Grid */}
@@ -78,7 +86,7 @@ export default function IsMakinalariPage() {
                   <Image
                     src={item.image || "/placeholder.svg"}
                     alt={item.title}
-                    objectFit="cover"
+                    objectFit="contain"
                     fill
                     className="p-4 object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -117,13 +125,10 @@ export default function IsMakinalariPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-blue-600 hover:bg-blue-700 btn-effect btn-glow"
+                className="bg-[#fcb912] hover:bg-[#fcb912]/90 btn-effect btn-glow text-black"
                 onClick={handleQuoteClick}
               >
                 Teklif İsteyin
-              </Button>
-              <Button size="lg" variant="outline" className="btn-effect bg-transparent" onClick={handleCatalogClick}>
-                Katalog İndirin
               </Button>
             </div>
           </div>

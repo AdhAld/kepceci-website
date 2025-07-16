@@ -24,82 +24,52 @@ export default function YedekParcalarPage() {
       category: "Filtre Grubu",
     },
     {
-      name: "Hava Filtresi",
-      partNumber: "CAT-245-6375",
-      image: "/2456375.jpeg",
-      category: "Filtre Grubu",
-    },
-    {
       name: "Mazot Filtresi",
       partNumber: "CAT-1R-0762",
       image: "/1r0762.jpg",
-      category: "Yakıt Filtresi Grubu",
+      category: "Filtre Grubu",
     },
     {
       name: "Hidrolik Yağ Filtresi",
       partNumber: "CAT-1G-8878",
       image: "/1g8878.jpeg",
-      category: "Hidrolik/Şanzıman Filtresi",
+      category: "Filtre Grubu",
     },
     {
-      name: "Şanzıman Yağı",
+      name: "Hidrolik/Şanzıman Yağ Filtresi",
       partNumber: "CAT-132-8875",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "X",
+      image: "/oilFilter.jpeg",
+      category: "Filtre Grubu",
     },
     {
-      name: "",
-      partNumber: "CAT-245-6575",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "X",
-    },
-    {
-      name: "",
-      partNumber: "CAT-462-1171",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "X",
-    },
-    {
-      name: "",
-      partNumber: "CAT-299-8229",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "X",
-    },
-    {
-      name: "APOS EKLİCEK",
-      partNumber: "CAASDFAT-2W-8002",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "SoğutmADSFa Sistemi",
+      name: "Ana Standart Verimli Motor Havası Filtresi",
+      partNumber: "CAT-245-6375",
+      image: "/havafiltre.jpeg",
+      category: "Filtre Grubu",
     },
       {
-      name: "APOS EKLİCEK",
-      partNumber: "CAASDFAT-2W-8002",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "SoğutmADSFa Sistemi",
+      name: "Şanzıman Yağı",
+      partNumber: "CAT-EM7X-7858",
+      image: "/sanzimanyagi.png",
+      category: "Yağ Grubu",
     },
       {
-      name: "APOS EKLİCEK",
-      partNumber: "CAASDFAT-2W-8002",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "SoğutmADSFa Sistemi",
+      name: "Hidrolik Yağı",
+      partNumber: "CAT-309-6942",
+      image: "/hidrolikyagi.jpg",
+      category: "Yağ Grubu",
     },
       {
-      name: "APOS EKLİCEK",
-      partNumber: "CAASDFAT-2W-8002",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "SoğutmADSFa Sistemi",
+      name: "Şanzıman Yağı",
+      partNumber: "CAT-EM7X-7855",
+      image: "/sanziman2.jpeg",
+      category: "Yağ Grubu",
     },
       {
-      name: "APOS EKLİCEK",
-      partNumber: "CAASDFAT-2W-8002",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "SoğutmADSFa Sistemi",
-    },
-      {
-      name: "APOS EKLİCEK",
-      partNumber: "CAASDFAT-2W-8002",
-      image: "/placeholder.svg?height=200&width=200",
-      category: "SoğutmADSFa Sistemi",
+      name: "Dizel Motor Yağı",
+      partNumber: "CAT-EM3E-9848",
+      image: "/dizelyagi.jpg",
+      category: "Yağ Grubu",
     },
   ]
 
@@ -134,11 +104,12 @@ export default function YedekParcalarPage() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-16">
             {spareParts.map((part, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative h-40 overflow-hidden bg-muted">
+                <div className="relative h-40 overflow-hidden bg-white">
                   <Image
                     src={part.image || "/placeholder.svg"}
                     alt={part.name}
                     fill
+                    objectFit="contain"
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>

@@ -32,11 +32,11 @@ export default function HomePage() {
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    
+
     if (isSubmitting) return
-    
+
     setIsSubmitting(true)
-    
+
     const formData = new FormData(e.currentTarget)
     const formValues = {
       firstName: formData.get('name') as string,
@@ -61,7 +61,7 @@ export default function HomePage() {
           duration: 4000,
           position: 'top-center',
         })
-        
+
         // Reset form properly
         if (formRef.current) {
           formRef.current.reset()
@@ -107,12 +107,25 @@ export default function HomePage() {
             <Badge className="mb-6 bg-[#fcb912] text-black hover:bg-[#fcb912]/90 shadow-lg">
               KEPÇECİ İŞ MAKİNALARI
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl">
-             Yetkili <span className="text-[#fcb912] drop-shadow-lg">Caterpillar</span> Servisi ve Distribütörü
-            </h1>
+            
+          <div className="flex space-x-4 mx-auto justify-center items-center">
+            
+            <div><h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl">
+              Yetkili</h1></div>
+              <div><Image
+              src="/borusan-logo.svg"
+              alt="Caterpillar Logo"
+              width={150}
+              height={75}
+              className="mx-auto w-40 h-20 mb-6"
+            /></div>
+            <div><h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl"> Servisi</h1></div>
+              </div>
             <p className="text-xl md:text-2xl mb-8 drop-shadow-lg text-gray-100">
               30+ Yıllık Deneyim, Güvenilir Hizmet
             </p>
+          
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
@@ -150,9 +163,9 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Kepçeci İş Makinaları Hakkında</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                35 yılı aşkın deneyimimizle Doğu Anadolu Bölgesi'nin tek yetkili Borusan Caterpillar servisi olarak
-                (Yetkili servis listesini aşşağıdaki bağlantıdan kontrol edebilirsiniz) hizmet veriyoruz. Güvenilir,
-                kaliteli ve profesyonel hizmet anlayışımızla sektörde lider konumdayız.
+                30 yılı aşkın tecrübemizle, Doğu Anadolu Bölgesi'nde Borusan Caterpillar’ın yetkili servisi olarak hizmet sunmaktayız.
+                (Yetkili servis listesine aşağıdaki bağlantıdan ulaşabilirsiniz.)
+                Güvenilirlik, kalite ve profesyonellik ilkelerimiz doğrultusunda sektörde güçlü bir konuma sahibiz.
               </p>
               <a
                 href="https://www.borusancat.com/tr/contact/map"
@@ -211,8 +224,8 @@ export default function HomePage() {
               {[
                 {
                   icon: Truck,
-                  title: "İş Makinası Alım-Satım-Kiralama",
-                  description: "Yeni ve ikinci el iş makinası alım-satım ve kiralama hizmetleri",
+                  title: "İş Makinası Alım-Satım",
+                  description: "Yeni ve ikinci el iş makinası alım-satım hizmetleri",
                   link: "/is-makinalari",
                 },
                 {
