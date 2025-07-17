@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kepceciismakinalari.com
+
+# Sitemaps
+Sitemap: https://kepceciismakinalari.com/sitemap.xml
