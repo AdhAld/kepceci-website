@@ -12,19 +12,60 @@ export const metadata: Metadata = {
   title: "Kepçeci İş Makinaları - Van, Hakkari, Bitlis'te Tek Yetkili Caterpillar Servisi",
   description:
     "30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
-    generator: 'Hüseyin Kocatürk , Abdullah Aldemir',
-icons: {
+  keywords: [
+    "Kepçeci İş Makinaları",
+    "Caterpillar Servisi",
+    "Van Caterpillar",
+    "Hakkari Caterpillar",
+    "Bitlis Caterpillar",
+    "İş Makinası Servisi",
+    "Borusan Caterpillar",
+    "Yedek Parça",
+    "İş Makinası Alım Satım"
+  ],
+  authors: [{ name: "Hüseyin Kocatürk" }, { name: "Abdullah Aldemir" }],
+  generator: "Hüseyin Kocatürk, Abdullah Aldemir",
+  icons: {
     icon: "/logo.png",
     apple: "/logo.png",
     shortcut: "/logo.png",
   },
   openGraph: {
     title: "Kepçeci İş Makinaları - Van, Hakkari, Bitlis'te Tek Yetkili Caterpillar Servisi",
-    description:"30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
+    description: "30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
     url: "https://kepceciismakinalari.com",
     siteName: "Kepçeci İş Makinaları",
     locale: "tr_TR",
-    type: "website",}
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Kepçeci İş Makinaları Logo"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kepçeci İş Makinaları - Van, Hakkari, Bitlis'te Tek Yetkili Caterpillar Servisi",
+    description: "30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi.",
+    images: ["/logo.png"]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1
+    }
+  },
+  alternates: {
+    canonical: "https://kepceciismakinalari.com"
+  }
 }
 
 export default function RootLayout({
@@ -34,6 +75,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" suppressHydrationWarning>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <link rel="canonical" href="https://kepceciismakinalari.com" />
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Navbar />

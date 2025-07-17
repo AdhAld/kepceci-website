@@ -223,8 +223,8 @@ export default function HomePage() {
               {[
                 {
                   icon: Truck,
-                  title: "İş Makinası Alım-Satım",
-                  description: "Yeni ve ikinci el iş makinası alım-satım hizmetleri",
+                  title: "İş Makinası Alım-Satım-Kiralama",
+                  description: "Yeni ve ikinci el iş makinası alım-satım-kiralama hizmetleri",
                   link: "/is-makinalari",
                 },
                 {
