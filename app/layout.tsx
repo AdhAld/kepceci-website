@@ -9,9 +9,9 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Kepçeci İş Makinaları - Yetkili Caterpillar Servisi",
+  title: "Kepçeci İş Makinaları - Van, Hakkari, Bitlis'te Tek Yetkili Caterpillar Servisi",
   description:
-    "30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
+    "30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
     generator: 'Hüseyin Kocatürk , Abdullah Aldemir',
 icons: {
     icon: "/logo.png",
@@ -19,8 +19,8 @@ icons: {
     shortcut: "/logo.png",
   },
   openGraph: {
-    title: "Kepçeci İş Makinaları - Doğu Anadolu Caterpillar Servisi",
-    description:"30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
+    title: "Kepçeci İş Makinaları - Van, Hakkari, Bitlis'te Tek Yetkili Caterpillar Servisi",
+    description:"30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
     url: "https://kepceciismakinalari.com",
     siteName: "Kepçeci İş Makinaları",
     locale: "tr_TR",

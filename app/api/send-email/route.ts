@@ -165,7 +165,7 @@ export async function POST(request: NextRequest) {
             
             <div style="text-align: center; margin-top: 20px; color: #666; font-size: 14px;">
               <p>Bu mesaj otomatik olarak gönderilmiştir.</p>
-              <p>30+ yıllık deneyimimizle Doğu Anadolu'nun tek yetkili Caterpillar servisi</p>
+              <p>30+ yıllık deneyimimizle Van, Hakkari ve Bitlis illerinde tek yetkili Caterpillar servisi</p>
             </div>
           </div>
         </div>
