@@ -14,7 +14,9 @@ export const metadata: Metadata = {
     "30+ yıllık deneyimimizle Van, Hakkari, Bitlis illerinde tek yetkili Borusan Caterpillar servisi. İş makinası alım-satım, yedek parça ve servis hizmetleri.",
   keywords: [
     "Kepçeci İş Makinaları",
+    "Caterpillar İş Makinaları",
     "Caterpillar Servisi",
+    "cat servis",
     "Van Caterpillar",
     "Hakkari Caterpillar",
     "Bitlis Caterpillar",
